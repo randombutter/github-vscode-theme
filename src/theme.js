@@ -1,22 +1,20 @@
 const chroma = require("chroma-js");
 const { getColors } = require("./colors");
 
-// Choosing colors from primer/primitives
-// There are multiple ways to define what color is used:
-
-// 1. Global variable
-//    e.g. "textLink.foreground": color.fg.default,
-// 2. Color scale
-//    e.g. "textLink.foreground": scale.blue[5],
-// 3. Per theme. Useful when a certain theme needs an exception
-//    e.g. "textLink.foreground": themes({ light: scale.blue[5], light_high_contrast: scale.blue[5], light_colorblind: scale.blue[5], dark: scale.blue[2], dark_high_contrast: scale.blue[3], dark_colorblind: scale.blue[2], dark_dimmed: scale.blue[3] }),
+// Choosing colors's primer primitives
+// There are multiple ways to define what colors is used
+// 1 Global variable
+// 'textLink.foreground": colorfg.default,
+// 2 Color scales
+,// textLink.foreground: scaleblue[], 
+// 3. Per theme. Useful when a certain theme needs an exception 
 
 function getTheme({ theme, name }) {
 
-  const themes = (options) => options[theme]; // Usage: themes({ light: "lightblue", light_high_contrast: "lightblue", light_colorblind: "lightblue", dark: "darkblue", dark_high_contrast: "darkblue", dark_colorblind: "darkblue", dark_dimmed: "royalblue" })
+  const themes = (options) => options[theme]; 
   const rawColors = getColors(theme)
   const color = changeColorToHexAlphas(rawColors)
-  const scale = color.scale; // Usage: scale.blue[6]
+  const scale = color.scale;
 
   const onlyDark = (color) => {
     return themes({ dark: color, dark_high_contrast: color, dark_colorblind: color, dark_dimmed: color })
