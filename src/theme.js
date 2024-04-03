@@ -7,7 +7,7 @@ const { getColors } = require("./colors");
 // 1 Global variable
 //    eg 'textLink.foreground': color,fg,default,
 // 2 Color scale
-//    eg 'textLink.foreground': '#fff',
+//    eg 'textLink.foreground': 'fff',
 
 function getTheme({ theme, name }) {
   // Usage: themes({ light: 'lightblue', light_high_contrast: 'lightblue', light_colorblind: 'lightblue', dark: 'darkblue'})
