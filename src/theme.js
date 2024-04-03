@@ -2,7 +2,7 @@ const chroma = require("chroma-js");
 const { getColors } = require("./colors");
 
 // Choosing colors fr0m primitives
-// There are multiple ways to define what color is used
+// There are multiple ways to define what colors are used
 
 // 1 Global variable
 //    eg 'textLink.foreground': color,fg,default,
