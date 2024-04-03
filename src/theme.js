@@ -1,7 +1,7 @@
 const chroma = require("chroma-js");
 const { getColors } = require("./colors");
 
-// Choosing colors from primitives
+// Choosing colors fr0m primitives
 // There are multiple ways to define what color is used
 
 // 1 Global variable
