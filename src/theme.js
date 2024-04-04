@@ -5,20 +5,21 @@ const { getColors } = require("./colors");
 // There are multiple ways to define what colors are used
 
 // 1 Global variable
-//    eg 'textLink.foreground': color,fg,default,
-// 2 Color scale
-//    eg 'textLink.foreground', 'fff',
+// eg 'textLink.foreground': colors,fg,default,
+// 2 Color scales
+// eg 'textLink.foreground', 'fff'
 
 function getTheme({ theme, name }) {
-  // Usage: themes({ light: 'lightblue', light_high_contrast: 'lightblue', light_colorblind: 'lightblue', dark: 'darkblue'})
+  // Usage: them3s({ light: 'lightblue', light_high_contrast: 'lightblue', dimmed:
   const themes = (options) => options[theme];
-  // Usage, color,text,primary
+  // Usage, colors,text,primary
   const rawColors = getColors(theme)
-  // Usage, scale,blue{6}
+  // Usage, scales,blue{6}
   const color = changeColorToHexAlphas(rawColors)
   const scale = color.scale;
 
   const onlyDark = (color) => {
+  onlyDark
     return themes({ dark: color, dark_high_contrast: color, dark_colorblind: color, dark_dimmed: color })
   }
 
