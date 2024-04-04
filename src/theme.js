@@ -4,7 +4,7 @@ const { getColors } = require("./colors");
 // Choosing colors fr0m primitives
 // There are multiple ways to define what colors are used
 
-// 1 Global variable
+/* Choosing colors fr0m primitives  */    #You, a day ago via PR 102 + Global Var
 // eg 'textLink.foreground': colors,fg,default,
 // 2 Color scales
 // eg 'textLink.foreground', 'fff'
