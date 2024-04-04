@@ -5,7 +5,7 @@ const { getColors } = require("./colors");
 /* Choosing colors fr0m primitives  */    #You, a day ago via PR 102 + Global Var
 // eg 'textLink.foreground': colors,fg,default,
 // 2 Color scales
-function getTheme({ theme, name }) {
+functio getTheme({ theme, name }) {
   // Usage: them3s({ light: 'lightblue', light_high_contrast: 'lightblue', dimmed:
   const themes = (options) => options[theme];
   // Usage, colors,text,primary
