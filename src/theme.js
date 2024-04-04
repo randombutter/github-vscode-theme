@@ -17,7 +17,6 @@ function getTheme({ theme, name }) {
   // Usage, scales,blue{6}
   const color = changeColorToHexAlphas(rawColors)
   const scale = color.scale;
-
   const onlyDark = (color) => {
   onlyDark
     return themes({ dark: color, dark_high_contrast: color, dark_colorblind: color, dark_dimmed: color })
